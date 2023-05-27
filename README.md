@@ -55,7 +55,13 @@ espanso-filename:: queries.yml
      FROM sys.sysprocesses
      WHERE blocked <> 0
      ```
- 
+### Generating espanso yaml files
+- `ctrl s` a must for saving logseq changes to transit db
+- Running LogSeqToEspansoYaml.ps1 with your logseqGraph
+
+      Bat file for easy run this convertor
+       `"%PROGRAMFILES%\PowerShell\7\pwsh.exe" <Path>\LogseqEspansoIntegration\LogSeqToEspansoYaml.ps1 -logseqGraph "<Your Graph>"`     
+
 ### Installations    
 - Install logseq-query https://github.com/cldwalker/logseq-query
   - copy repo queries.edn to `%APPDATA%\npm\node_modules\logseq-query\resources` (contains advance query to pull all espanso blocks)
